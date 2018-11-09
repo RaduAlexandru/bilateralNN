@@ -16,7 +16,8 @@ if("${CAFFE_SRC}" STREQUAL "")
 
   # Default caffe version
   if("${CAFFE_VERSION}" STREQUAL "")
-    set(CAFFE_VERSION a1c81aca641e5b16f3e2007be07dfdedc072606e)
+    # set(CAFFE_VERSION a1c81aca641e5b16f3e2007be07dfdedc072606e)
+    set(CAFFE_VERSION eeebdab16155d34ff8f5f42137da7df4d1c7eab0)
   endif()
 
   # Default repository
