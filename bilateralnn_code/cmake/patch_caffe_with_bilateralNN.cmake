@@ -40,8 +40,8 @@ foreach(_current_file IN LISTS bilateralNN_SRC)
        AND (EXISTS "${current_directory}/${current_file_without_folder}"))
       # removing line ending differences
 
-      configure_file("${current_directory}/${current_file_without_folder}" right.proto.tmp NEWLINE_STYLE CRLF)
-      configure_file("${BILATERALNN_SOURCE_DIR}/${_current_file}" left.proto.tmp NEWLINE_STYLE CRLF)
+      configure_file("${current_directory}/${current_file_without_folder}" right.proto.tmp COPYONLY)
+      configure_file("${BILATERALNN_SOURCE_DIR}/${_current_file}" left.proto.tmp COPYONLY)
 
       # compares the files, lines ending agnostic
       execute_process(
